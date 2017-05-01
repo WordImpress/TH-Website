@@ -1,0 +1,105 @@
+/**
+ * Loading Screen: http://codepen.io/Jabberwocky/pen/wtyux
+ */
+
+#loading-wrap {
+  background: @th-primary-bg url('../img/build-together-overlay.png') no-repeat center center;
+  background-size:cover;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: 9999;
+  width:100%;
+  height:100%;
+}
+
+@-webkit-keyframes wobbleSpin {
+  0% {
+	-webkit-transform: rotate(0);
+	transform: rotate(0);
+  }
+
+  16% {
+	-webkit-transform: rotate(168deg);
+	transform: rotate(168deg);
+  }
+
+  37% {
+	-webkit-transform: rotate(68deg);
+	transform: rotate(68deg);
+  }
+
+  72% {
+	-webkit-transform: rotate(384deg);
+	transform: rotate(384deg);
+  }
+
+  100% {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+  }
+}
+
+@keyframes wobbleSpin {
+  0% {
+	-webkit-transform: rotate(0);
+	transform: rotate(0);
+  }
+
+  16% {
+	-webkit-transform: rotate(168deg);
+	transform: rotate(168deg);
+  }
+
+  37% {
+	-webkit-transform: rotate(68deg);
+	transform: rotate(68deg);
+  }
+
+  72% {
+	-webkit-transform: rotate(384deg);
+	transform: rotate(384deg);
+  }
+
+  100% {
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+  }
+}
+
+
+.loading {
+  position: absolute;
+  top:50%;
+  margin-top:-76px;
+  left:50%;
+  margin-left:-76px;
+  height: 192px;
+  width: 192px;
+  border-radius: 50%;
+  background: url("../img/loading-logo.png") no-repeat center center transparent;
+  padding: 0;
+}
+
+.loading {
+  border: 15px solid;
+  border-color: #666666;
+}
+
+.loading:after {
+  content: " ";
+  position: absolute;
+  height: 192px;
+  width: 192px;
+  border-radius: 50%;
+  top: -15px;
+  left: -15px;
+  border: 15px solid transparent;
+  border-left-color: yellow;
+  border-right-color: yellow;
+  -webkit-animation: wobbleSpin 2s ease-in-out infinite;
+  animation: wobbleSpin 2s ease-in-out infinite;
+  padding: 0;
+}

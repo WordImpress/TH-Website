@@ -1,0 +1,517 @@
+/**
+ * Thought House Homepage
+ */
+
+html {
+  overflow-y: scroll !important;
+}
+
+body.home {
+  background: #FFF;
+  overflow: hidden !important;
+}
+
+/* ==========================================================================
+Notice
+   ========================================================================== */
+
+.header-notice {
+  background: #363636;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+
+  > p {
+	color: white;
+	margin: 0;
+	padding: 10px 0;
+
+	a {
+	  color: yellow;
+	}
+  }
+}
+
+/* ==========================================================================
+Introduction
+   ========================================================================== */
+#introduction {
+  background: @th-primary-bg url('../img/build-together-overlay.png') no-repeat center center;
+  background-size: cover;
+
+  img.th-main-logo {
+	max-width: 100%;
+	position: relative;
+  }
+
+  .slide-inner {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+
+	.introduction-wrap {
+	  width: 60%;
+	  height: 60%;
+	  min-width: 300px;
+	  max-width: 800px;
+	  max-height: 220px;
+	  overflow: visible;
+	  margin: 0 auto;
+
+	  h1 {
+		display: inline-block;
+		padding: 12px 30px;
+		margin: 20px 0 0;
+		position: relative;
+		font-size: 36px;
+
+		#typed-cursor {
+		  position: relative;
+		  top: -3px;
+		}
+
+		span.typed-js {
+		  font-style: italic;
+		  color: #ffd200;
+		  font-weight: normal;
+		}
+
+	  }
+
+	}
+
+  }
+}
+
+/* ==========================================================================
+Why We Exist
+   ========================================================================== */
+
+#why-we-exist {
+
+  .slide-heading-wrap {
+	position: absolute;
+  }
+
+  .slide-inner {
+	padding-top: 150px;
+	background-position: center center;
+	background-size: cover;
+  }
+
+  .slide-2-inner {
+	width: 90%;
+	min-width: 290px;
+	max-width: 1200px;
+	max-height: 220px;
+	overflow: visible;
+	z-index: 999;
+	margin: 0 auto;
+  }
+
+}
+
+/* ==========================================================================
+We Understand
+   ========================================================================== */
+
+#we-understand {
+  background: url('../img/grunge_wall.png') repeat 0 0 #FFF;
+  text-align: center;
+
+  .reveal-txt {
+	text-shadow: none;
+	color: #333;
+
+	.reveal-title {
+	  font-style: italic;
+	}
+
+  }
+
+  .back-btn {
+	background: url('../img/back-arrow-black.png');
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	margin: 30px 0 0;
+  }
+
+  .diamondswrap {
+	position: relative;
+	margin: 125px auto;
+	padding: 0;
+	min-height: 400px;
+
+	li.item, li.item .diamond-inner {
+	  display: block;
+	  width: 100%;
+	  height: 100%;
+	}
+
+	.diamond-inner .absolute-center {
+	  -webkit-transition: 0.2s all linear;
+	  -moz-transition: 0.2s all linear;
+	  -o-transition: 0.2s all linear;
+	  transition: 0.2s all linear;
+	}
+
+	.diamond-inner:hover .absolute-center {
+	  background: rgba(0, 0, 0, 0.75);
+	  cursor: pointer;
+	}
+
+	.square-outline {
+	  font-size: 26px;
+	  padding: 5px 20px;
+	}
+
+  }
+}
+
+/* ==========================================================================
+Slide 4
+   ========================================================================== */
+
+#the-journey {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 1px;
+
+  .table-wrap {
+	position: relative;
+	z-index: 999;
+  }
+
+}
+
+/* ==========================================================================
+ABOUT Slide
+   ========================================================================== */
+
+#about-th {
+  background: url('../img/slide-about-bg.png') no-repeat center @th-primary-bg;
+  background-size: cover;
+  padding: 100px 0;
+  color: #FFF;
+
+  .top-row {
+	margin: 0 0 75px;
+  }
+
+  .about-top-left {
+
+	h3 {
+	  font-size: 48px;
+	  margin: 30px 0 20px;
+	  font-weight: normal;
+	}
+
+	p {
+	  font-size: 22px;
+
+	}
+
+  }
+
+  .bottom-row {
+	.widget {
+
+	  .border-heading {
+		.minion;
+		font-style: italic;
+		text-transform: uppercase;
+		font-weight: normal;
+		font-size: 30px;
+		margin: 0 0 15px;
+		padding-left: 0;
+		padding-right: 0;
+	  }
+
+	}
+  }
+
+}
+
+/* ==========================================================================
+Testimonial Slide
+   ========================================================================== */
+
+#what-people-say {
+
+  .slide-inner {
+	background: url('../img/slide-dog-bg.jpg') no-repeat center #FFF;
+	background-size: cover;
+	min-height: 700px;
+	position: relative;
+	padding: 50px 0;
+
+	.say-center {
+	  width: 90%;
+	  margin: 0 auto;
+	}
+
+	blockquote {
+	  border: none;
+	  font-style: italic;
+	  font-size: 36px;
+	  background: rgba(0, 0, 0, 0.34);
+	  padding: 15px 20px;
+	  text-align: left;
+	}
+
+	.cite-wrap {
+
+	  margin: 30px 0;
+
+	  .th-client-logo {
+		float: left;
+	  }
+
+	  cite {
+		.myriad;
+		font-size: 45px;
+		text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		color: #FFF;
+		margin: 30px 0 0 40px;
+		padding: 0;
+		float: left;
+	  }
+
+	}
+
+  }
+
+}
+
+/* ==========================================================================
+CTA / Contact / FOOTER
+   ========================================================================== */
+
+#lets-talk {
+
+  background: url('../img/slide-cta-bg.jpg') no-repeat center @th-primary-bg;
+  background-size: cover;
+  min-height: 1000px;
+  color: #FFF;
+
+  &.footer-nocta {
+	min-height: 0;
+  }
+
+  &.footer-nocta .home-footer {
+	margin-top: 0;
+  }
+
+  .container {
+	max-width: 600px;
+	padding: 100px 25px;
+  }
+
+  .super-large-text {
+	font-size: 140px;
+	margin: 0;
+	padding: 0;
+  }
+
+  .sub-heading {
+	font-size: 28px;
+	color: @th-light-gray;
+  }
+
+  /* Form */
+  #footer-cta {
+	position: relative;
+
+	#gform_wrapper_1 {
+	  margin: 30px 0;
+
+	  label {
+		.myriad-bold-condensed;
+		text-transform: uppercase;
+		font-style: italic;
+		font-size: 24px;
+	  }
+
+	}
+
+	.sub-phone {
+	  .minion;
+	  font-size: 28px;
+	  font-style: italic;
+
+	  span {
+		.myriad;
+		font-style: normal;
+		font-weight: bold;
+	  }
+
+	  @media (min-width: 600px) {
+
+		font-size: 26px;
+		position: absolute;
+		bottom: -4px;
+		right: 0;
+
+	  }
+
+	}
+
+  }
+
+  .home-footer {
+	width: 260px;
+	margin: 80px auto 0;
+	text-align: center;
+	color: @th-light-gray;
+	font-size: 16px;
+
+	address {
+	  margin: 10px 0 25px;
+	}
+
+	a {
+	  color: @th-light-gray;
+	  &:hover {
+		color: @th-light-gray;
+		text-decoration: none;
+	  }
+	}
+  }
+
+}
+
+/* ==========================================================================
+SHARED / GENERAL
+   ========================================================================== */
+.section.section {
+
+  position: relative;
+  z-index: 99;
+
+  .slide-heading-wrap {
+	background: #FFF;
+	padding: 55px 0 50px;
+	width: 100%;
+	text-align: center;
+	z-index: 999;
+
+	.border-heading {
+	  font-size: 46px;
+	  display: inline-block;
+
+	}
+
+  }
+
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media (max-width: 650px) {
+
+  .hexagon-wrap {
+
+	width: 400px;
+	min-height: 980px;
+
+	.hexagon {
+	  width: 200px;
+	  height: 230px;
+
+	  .hex-outline, .hex-hover {
+		background: url('../img/hexagon-outline.png') no-repeat 0 0 transparent;
+	  }
+
+	  .hex-hover {
+		background: url('../img/hexagon-dark.png') no-repeat 0 0 transparent;
+	  }
+
+	}
+
+	.hexagon-1 {
+	  top: 60px;
+	  left: 0px;
+	}
+	.hexagon-2 {
+	  top: 236px;
+	  left: 101px;
+	}
+	.hexagon-3 {
+	  top: 412px;
+	  left: 203px;
+	}
+	.hexagon-4 {
+	  top: 588px;
+	  left: 101px;
+	}
+	.hexagon-5 {
+	  top: 765px;
+	  left: 0px;
+	}
+	.hexagon-6 {
+	  display: none;
+	}
+
+  }
+
+}
+
+@media (min-width: 817px) and (max-width: 1199px) {
+  .data-item {
+	display: none !important;
+  }
+}
+
+@media (min-width: 581px) and (max-width: 816px) {
+  #we-understand .diamondswrap {
+	margin-bottom: 0;
+  }
+
+  .results-item {
+	display: none !important;
+  }
+}
+
+@media (max-width: 620px) {
+
+  #lets-talk .super-large-text {
+	font-size: 120px;
+  }
+
+}
+
+@media (max-width: 580px) {
+
+  #lets-talk .super-large-text {
+	font-size: 100px;
+  }
+
+}
+
+@media (max-width: 580px) {
+  #we-understand .diamondswrap {
+	margin: 65px 0;
+
+	li.item .diamond-inner {
+	  height: 250px;
+	  width: 250px;
+	  margin: 0 auto 30px;
+	}
+  }
+
+}
+
+@media (max-width: 420px) {
+  #introduction .slide-inner .introduction-wrap h1, .we-build-txt {
+	font-size: 26px;
+  }
+
+}

@@ -1,0 +1,117 @@
+/**
+ * Franchise Update #DoWhatMatters
+ */
+
+body.page-template-template-dowhatmatters {
+  background: url('../img/franupdate/nyc-bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .dwm-header {
+	background: rgba(255, 255, 255, 0.85);
+	padding: 0 0 50px;
+	text-align: center;
+
+	.th-top {
+	  background: #1b1e1e url(../img/build-together-overlay.png) no-repeat center center;
+	  padding: 50px 0;
+	  margin: 0;
+	}
+	div.dwn-subheader {
+	  background: #333;
+	  padding: 25px 0 30px;
+	  margin: 0 0 60px;
+
+	  h1.dwm-h1 {
+		color: yellow;
+		font-style: italic;
+		margin: 0 0 5px;
+	  }
+
+	  p {
+		color: #FFF;
+		margin: 0;
+		font-size: 20px;
+	  }
+	}
+
+	.dwm-intro {
+
+	  em {
+		.minion;
+		font-size: 34px;
+	  }
+
+	  ol {
+		max-width: 580px;
+		margin: 0 auto;
+		text-align: left;
+		font-size: 18px;
+
+		li {
+		  margin-bottom: 10px;
+		}
+	  }
+
+	}
+
+  }
+
+  .ff-stream {
+	margin-bottom: 100px;
+  }
+
+  .ff-search {
+	display: none;
+  }
+
+}
+
+//Items
+
+div.dwm-item {
+
+  @media (min-width: 730px) {
+
+	width: 33.3333%;
+	float: left;
+	padding: 0 15px;
+  }
+
+  .dwm-item-title {
+	background: url('../img/th-pm-icon.png') no-repeat top center transparent;
+	padding-top: 165px;
+	font-size: 28px;
+	font-style: italic;
+	font-weight: bold;
+  }
+
+  &.dwm-item-2 .dwm-item-title {
+	background-image: url('../img/th-idea-icon.png');
+  }
+  &.dwm-item-3 .dwm-item-title {
+	background-image: url('../img/th-dart-icon.png');
+  }
+
+}
+
+.hashtag-intro {
+  font-weight: 300;
+  font-size: 40px;
+  margin: 0 0 30px;
+  padding: 30px 0;
+  font-style: italic;
+  text-align: center;
+  color: #424242;
+  background: #CDCDCD;
+}
+
+.ff-filter-holder:before {
+  display: none;
+}
+
+.ff-stream .ff-filter-holder .ff-filter, .ff-stream .ff-loadmore-wrapper .ff-btn {
+  color: rgb(31, 33, 32);
+}

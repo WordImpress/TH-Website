@@ -1,0 +1,150 @@
+/* ==========================================================================
+   Forms
+   @see: http://roots.io/style-gravity-forms-with-bootstrap/
+   ========================================================================== */
+
+/* General Forms */
+
+input[type="text"], input[type="password"],
+select,
+textarea {
+	.form-control();
+	padding: 6px;
+}
+
+input[type="submit"], input[type="button"] {
+	.btn();
+	.btn-primary();
+  	.easing-transition;
+	width: auto;
+}
+
+/* Gravity Forms */
+.gform_wrapper ul {
+	.list-unstyled();
+}
+
+.gform_wrapper li {
+	.form-group();
+}
+
+.gform_wrapper form {
+	margin-bottom: 0;
+}
+
+.gform_wrapper .gfield_label {
+}
+
+.gform_wrapper .gfield_required {
+	padding-left: 1px;
+	color: @state-danger-text;
+}
+
+.ginput_container textarea {
+	height: auto;
+}
+
+.gform_button {
+	.btn();
+}
+
+.gform_wrapper .gfield_error {
+	.gfield_label {
+		color: @state-danger-text;
+	}
+	input,
+	select,
+	textarea {
+		border-color: @alert-danger-border;
+		background-color: @alert-danger-bg;
+		color: @alert-danger-text;
+		.form-control-focus(@alert-danger-text);
+	}
+}
+
+.validation_error {
+	.alert();
+	.alert-danger();
+}
+
+#gforms_confirmation_message {
+	.alert();
+	.alert-success();
+}
+
+.ginput_complex {
+
+	input + label {
+		font-style: italic;
+		font-size: 16px;
+	}
+
+}
+
+.gfield_description {
+
+	&.validation_message {
+		font-size: 16px;
+		color: red;
+		margin: 10px 0;
+
+	}
+}
+
+
+/* gform left/right */
+
+.gform_wrapper ul li.gform_left, span.ginput_left, span.name_first {
+	float: left;
+	width: 49%;
+	clear: none;
+  	margin-right:2%;
+}
+
+.gform_wrapper ul li.gform_right, span.ginput_right, span.name_last {
+	float: left;
+	width: 49%;
+	clear: none;
+}
+
+.gform_wrapper ul li.gform_left input.medium, span.ginput_left input {
+	width: 91%;
+}
+
+.gform_wrapper ul li.gform_left select {
+	width: 95%;
+	padding: 3px;
+}
+
+.gform_wrapper ul li.gform_right input.medium, span.ginput_right input {
+	width: 100%;
+}
+
+.gform_wrapper ul li.gform_right select {
+	width: 100%;
+	padding: 3px;
+}
+
+/* Gform Full */
+
+.gform_wrapper .gform_full, .wpcf7-full {
+	clear: left;
+	float: none;
+}
+
+.gform_wrapper .gform_full textarea, .wpcf7-full textarea {
+	width: 100%;
+}
+
+.gform_wrapper textarea, textarea {
+	padding: 10px;
+	height: 165px;
+}
+
+/* Sidebar */
+
+.sidebar .gform_wrapper ul li.gform_left, .sidebar span.ginput_left, .sidebar .gform_wrapper ul li.gform_right, .sidebar span.ginput_right {
+	float: none;
+	width: 100%;
+	clear: both;
+}

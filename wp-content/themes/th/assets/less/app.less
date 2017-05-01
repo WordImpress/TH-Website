@@ -1,0 +1,441 @@
+/**
+ * Thought House
+
+ fonts:
+
+ font-family: "minion-pro", sans-serif;
+  font-family: "myriad-pro", sans-serif;
+
+ */
+@white: #FFF;
+
+@th-primary-bg: #1b1e1e;
+@th-light-bg: #232727;
+@th-primary-heading: #333;
+@th-light-gray: #777;
+@th-yellow: #ffd200;
+@th-links-color: #009EFF;
+
+/* Social Colors */
+@color-twitter: #4099FF;
+@color-google-plus: #d34836;
+@color-facebook: #3B5998;
+
+@import "bootstrap/bootstrap.less";
+@import "loading.less";
+@import "animate.less";
+@import "icons.less";
+
+.animated-repeat {
+  animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+}
+
+body {
+  background: url('../img/blog-texture.png') repeat top left #FFF;
+}
+
+body, html {
+  font-family: "myriad-pro", serif;
+  margin: 0;
+  padding: 0;
+}
+
+body.admin-bar {
+  .header-notice {
+	top: 32px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "minion-pro", sans-serif;
+  font-weight: normal;
+  margin: 0 0 15px;
+}
+
+p {
+  font-size: 18px;
+  margin: 0 0 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.easing-transition {
+  -moz-transition: 0.2s all linear;
+  -o-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+}
+
+.circle-border {
+  border: 3px solid @gray;
+  border-radius: 50%;
+}
+
+.btn, a.btn, button.btn {
+  border-radius: 0;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-xs {
+  font-size: 13px;
+  padding: 3px 12px;
+}
+
+a {
+  .easing-transition;
+  text-decoration: none;
+
+  &:hover {
+	text-decoration: none;
+	color: @th-links-color;
+  }
+
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+}
+
+/* ==========================================================================
+   General Styles / Helper Classes
+   ========================================================================== */
+
+.minion {
+  font-family: "minion-pro", sans-serif;
+}
+
+.myriad {
+  font-family: "myriad-pro", sans-serif;
+}
+
+.myriad-bold-condensed {
+  font-family: "myriad-pro-condensed", sans-serif;
+}
+
+.table-wrap {
+  display: table;
+  width: 100%;
+  height: 100%;
+
+  .absolute-center {
+	display: table-cell;
+	vertical-align: middle;
+  }
+}
+
+.all-caps {
+  text-transform: uppercase;
+}
+
+.border-heading {
+  .myriad;
+  color: @th-primary-heading;
+  border-top: 3px solid @th-primary-heading;
+  border-bottom: 3px solid @th-primary-heading;
+  padding: 6px 30px 8px;
+  margin: 0;
+  text-align: center;
+  font-weight: bold;
+
+  &.border-heading-white {
+	color: #FFF;
+	border-color: #FFF;
+
+  }
+}
+
+.full-screen-text {
+  font-family: "minion-pro", sans-serif;
+  font-size: 54px;
+  color: #FFF;
+  text-shadow: 0 1px 2px #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.diamond {
+  width: 220px;
+  height: 220px;
+  background: @th-primary-bg;
+  margin: 3px 0 0 30px;
+  /* Rotate */
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  /* Rotate Origin */
+  -webkit-transform-origin: 0 100%;
+  -moz-transform-origin: 0 100%;
+  -ms-transform-origin: 0 100%;
+  -o-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+
+.square-outline {
+  .minion;
+  font-style: italic;
+  color: #FFF;
+  font-size: 20px;
+  max-height: 40px;
+  border: 3px solid #FFF;
+  line-height: 44px;
+  overflow: hidden;
+  text-shadow: 0 0 5px #000;
+}
+
+/* Square Buttons */
+
+.square-btn, button.square-btn, a.square-btn {
+  font-size: 18px;
+  font-weight: bold;
+  .myriad;
+  border: 3px solid #333;
+  color: #333;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  background: none;
+  border-radius: 0;
+  outline: none;
+
+  &:hover {
+	text-decoration: none;
+	border-color: #333;
+	color: yellow;
+	background: transparent;
+
+  }
+
+}
+
+.square-btn.square-btn-white {
+  color: #FFF;
+  border-color: #FFF;
+}
+
+.square-btn.square-btn-white:hover {
+  border-color: #FFF;
+}
+
+.yellow-txt {
+  .myriad-bold-condensed;
+  text-transform: uppercase;
+  color: yellow;
+  font-size: 32px;
+  font-style: italic;
+}
+
+.arrow-down {
+  background: url('../img/slide-arrow-down-white.png') no-repeat 0 0 transparent;
+  width: 60px;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 40px;
+  display: block;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.arrow-down-black {
+  background: url('../img/slide-arrow-down-black.png') no-repeat 0 0 transparent;
+}
+
+/* ==========================================================================
+   Bootstrap Additions, Tweaks
+   ========================================================================== */
+
+.centered-block {
+  float: none;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header.navbar {
+  background: @th-primary-bg;
+  position: fixed;
+  height: 70px;
+  top: -70px;
+  z-index: 999;
+  width: 100%;
+  border-radius: 0;
+  border: none;
+
+  .navbar-brand {
+	background: url('../img/thought-house-header-logo.png') no-repeat center transparent;
+	margin: 15px 0 0;
+	padding: 0;
+	width: 250px;
+	display: block;
+	height: 40px;
+	float: left;
+
+	span {
+	  display: none;
+	}
+
+  }
+
+  .container {
+	position: relative;
+  }
+
+}
+
+#menu-primary-navigation {
+
+  float: right;
+  margin: 30px 0 0;
+
+  li {
+
+	a {
+
+	  background: none;
+	  text-transform: uppercase;
+	  color: #FFF;
+	  font-weight: bold;
+	  opacity: 0.8;
+	  padding: 0 15px;
+
+	  &:hover {
+		text-decoration: none;
+		opacity: 1;
+	  }
+	}
+
+  }
+
+}
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+.content {
+}
+
+/* ==========================================================================
+   Primary Content
+   ========================================================================== */
+
+.main {
+}
+
+/* Gallery Shortcode */
+.gallery-row {
+  padding: 15px 0;
+}
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.sidebar {
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.content-info {
+}
+
+.footer-brand {
+  background: url('../img/thought-house-header-logo.png') no-repeat center transparent;
+  margin: 15px 0 0;
+  padding: 0;
+  width: 250px;
+  display: block;
+  height: 40px;
+
+  span {
+	display: none;
+  }
+
+}
+
+/* ==========================================================================
+   WordPress Generated Classes
+   See: http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+   ========================================================================== */
+
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
+.alignleft {
+  float: left;
+}
+
+.alignright {
+  float: right;
+}
+
+figure.alignnone {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* ==========================================================================
+   FranDev page
+   ========================================================================== */
+
+@import "frandev.less";
+
+/* ==========================================================================
+   FranUpdate page
+   ========================================================================== */
+
+@import "franupdate.less";
+
+/* ==========================================================================
+   FranUpdate page 2
+   ========================================================================== */
+
+@import "dowhatmatters.less";
+
+/* ==========================================================================
+   Plugin CSS
+   ========================================================================== */
+
+@import "plugins.less";
+
+/* ==========================================================================
+   Homepage
+   ========================================================================== */
+
+@import "homepage.less";
+
+
+/* ==========================================================================
+   Blog
+   ========================================================================== */
+
+@import "blog.less";
+
+/* ==========================================================================
+   Gravity Forms Styles
+   ========================================================================== */
+
+@import "forms.less";
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@import "responsive.less";
+
+
+

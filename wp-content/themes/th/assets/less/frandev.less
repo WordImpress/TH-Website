@@ -1,0 +1,342 @@
+/**
+ * Franchise Development LP
+ */
+
+body.page-template-template-fran-dev-php {
+  height: 100%;
+  width: 100%;
+}
+
+body.page-template-template-fran-dev-php ol li, body.page-template-template-fran-dev-php ul li {
+  font-size: 20px;
+}
+
+body.page-template-template-fran-dev-php .section {
+  background-size: cover !important;
+}
+
+.sub-heading {
+  font-size: 22px;
+}
+
+.centered-block, .content-block {
+  background: #FFF;
+  padding: 20px;
+  opacity: 0.9;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+label {
+  font-size: 22px;
+  font-family: "myriad-pro-condensed", sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+#footer-cta .gform_button {
+  border-color: #FFF;
+  color: #FFF;
+  &:hover {
+	color: yellow;
+  }
+
+}
+
+/* ==========================================================================
+FranDev Header
+   ========================================================================== */
+
+.frandev-cta {
+  color: #FFF;
+  margin: 11px 0 0;
+  border: 2px solid #FFF;
+  padding: 3px 10px;
+  text-align: center;
+
+  span {
+	margin: 0;
+	font-size: 13px;
+	display: block;
+  }
+
+  span.contact {
+	text-transform: uppercase;
+  }
+  span.question {
+	font-weight: bold;
+	font-size: 14px;
+	color: yellow;
+  }
+
+  &:hover {
+	text-decoration: none;
+	color: yellow;
+	border-color: yellow;
+  }
+
+}
+
+/* ==========================================================================
+CTA
+   ========================================================================== */
+
+#cta-modal {
+
+  display: none;
+  max-width: 600px;
+
+  textarea {
+	height: 100px;
+  }
+
+  .profile-img {
+	padding: 5px;
+	background: #FFF;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	border-radius: 50%;
+  }
+
+  .contact-info {
+
+	.contact-message {
+	  margin-left: 175px;
+
+	  h3 {
+		margin: 0 0 5px;
+	  }
+
+	  .sub-heading, .contact-employee {
+		margin: 0 0 8px;
+	  }
+
+	}
+
+  }
+
+  #gform_submit_button_2:hover {
+	color: #428bca;
+	border-color: #428bca;
+  }
+
+  .linked-in {
+	background: url('../img/frandev/linkedin-btn.gif');
+	width: 160px;
+	height: 25px;
+	display: block;
+
+  }
+
+  .pre-form-message {
+	clear: both;
+	margin: 20px 0 0;
+  }
+
+}
+
+/* ensure it displays in a modal */
+.mfp-content #cta-modal {
+  display: block;
+}
+
+/* ==========================================================================
+Introduction
+   ========================================================================== */
+#frandev-introduction {
+  background: url('../img/frandev/frandev-intro-bg.jpg') no-repeat center center;
+}
+
+/* ==========================================================================
+YouTube
+   ========================================================================== */
+#youtube {
+  background: url('../img/frandev/eldery-woman-youtube.jpg') no-repeat center center;
+}
+
+/* ==========================================================================
+Community
+   ========================================================================== */
+#community {
+  background: url('../img/frandev/frandev-community.jpg') no-repeat center center;
+}
+
+/* ==========================================================================
+Health
+   ========================================================================== */
+#health {
+  background: url('../img/frandev/frandev-salad.jpg') no-repeat center center;
+
+}
+
+/* ==========================================================================
+Mobile
+   ========================================================================== */
+#mobile {
+  background: url('../img/frandev/frandev-mobile.jpg') no-repeat center center;
+}
+
+/* ==========================================================================
+Google
+   ========================================================================== */
+#google {
+  background: url('../img/frandev/google-search.jpg') no-repeat center center;
+}
+
+/* ==========================================================================
+Responsive Styles
+   ========================================================================== */
+
+@media (max-width: @screen-sm) and ( min-width: @screen-phone) {
+
+  #input_2_6 {
+	height: 100px;
+  }
+
+  #frandev-introduction .centered-block {
+	width: 600px;
+
+	h1 {
+	  font-size: 40px;
+	}
+
+  }
+
+  .content-block {
+	margin-right: 30px;
+	margin-left: 30px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+  }
+
+  #lets-talk .super-large-text {
+	margin-top: 30px;
+  }
+
+}
+
+@media ( max-width: 767px ) {
+
+  body.page-template-template-fran-dev-php {
+
+
+	.section {
+	  p, h1, li {
+		text-align: center !important;
+	  }
+	}
+
+
+	h1 {
+	  font-size: 36px;
+	}
+
+	.sub-heading {
+	  font-size: 18px;
+	}
+
+	header.navbar {
+	  height: 50px;
+
+	  .navbar-header .navbar-brand {
+		float: none;
+		margin: 7px auto 0;
+	  }
+	  .cta-link {
+		display: none;
+	  }
+
+	}
+
+	#lets-talk {
+	  padding: 30px;
+	  .sub-phone {
+		text-align: center;
+		margin: 40px 0 0;
+		bottom: 0;
+		> span {
+		  display: block;
+		}
+	  }
+
+	  .home-footer {
+		margin-top: 40px;
+	  }
+
+	}
+
+	#frandev-introduction {
+
+	  .centered-block {
+		margin-top: 75px;
+	  }
+	  .sub-heading {
+		line-height: 1.2;
+		margin: 15px 0;
+	  }
+
+	}
+
+	.centered-block, .content-block {
+	  margin-left: 20px;
+	  margin-right: 20px;
+	  margin-top: 50px;
+	  margin-bottom: 50px;
+	}
+
+	#youtube {
+	  background: url('../img/frandev/wood_pattern.png') repeat 0 0 #FFF;
+	  background-size: auto !important;
+	}
+	#community {
+	  background: url('../img/frandev/small_steps.png') repeat 0 0 #FFF;
+	  background-size: auto !important;
+	}
+	#health {
+	  background: url('../img/frandev/congruent_pentagon.png') repeat 0 0 #FFF;
+	  background-size: auto !important;
+	}
+	#mobile {
+	  background: url('../img/frandev/skulls.png') repeat 0 0 #FFF;
+	  background-size: auto !important;
+	}
+	#google {
+	  background: url('../img/frandev/triangular.png') repeat 0 0 #FFF;
+	  background-size: auto !important;
+	}
+
+	.mobile-cta-link {
+	  position: fixed;
+	  bottom: 0;
+	  right: 0;
+	  background: #333;
+	  padding: 10px;
+	  z-index: 99;
+
+	  a.cta-link {
+		margin: 0;
+	  }
+
+	}
+	#cta-modal {
+	  .profile-image {
+		float: none !important;
+		text-align: center;
+		margin-bottom: 10px;
+	  }
+	  .contact-message, .linked-in {
+		margin-left: 0;
+		text-align: center;
+	  }
+	}
+
+  }
+
+}
+
+@media (min-width: @screen-lg-desktop) {
+  body.page-template-template-fran-dev-php {
+	#lets-talk .container {
+	  padding-top: 50px;
+	}
+  }
+}

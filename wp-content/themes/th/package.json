@@ -1,0 +1,15 @@
+{
+    "dependencies": {
+        "gulp": "*",
+        "gulp-less": "*",
+        "gulp-watch": "*",
+        "gulp-autoprefixer": "*",
+        "gulp-plumber": "*",
+        "gulp-livereload": "*",
+        "path": "*",
+        "gulp-util": "*",
+        "gulp-sourcemaps": "*",
+        "gulp-minify-css": "*",
+        "gulp-rename": "*"
+    }
+}

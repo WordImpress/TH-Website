@@ -1,0 +1,433 @@
+/* ==========================================================================
+TH Blog
+========================================================================== */
+
+//the blog is slightly less wide
+.page-template-template-blog-php .wrap, .single-post .wrap, .archive .wrap {
+  max-width: 900px;
+  margin-bottom: 50px;
+}
+
+//Blog Header (Used on blog listing and single pages)
+#blog-header-wrap {
+  background: @th-light-bg url('../img/build-together-overlay.png') no-repeat center center;
+  background-size: cover;
+  margin: 0 0 50px;
+  padding: 75px 0;
+  text-align: center;
+  color: #FFF;
+  border-top: 12px solid #161a1a;
+  border-bottom: 12px solid #161a1a;
+
+  h1 {
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+
+	span {
+	  display: none;
+	}
+  }
+
+  p.sub-heading {
+	margin: 30px 0 20px;
+  }
+
+}
+
+p.sub-heading {
+  .minion;
+  font-size: 18px;
+  text-transform: lowercase;
+}
+
+.archive #blog-header-wrap p.sub-heading {
+  margin: 12px 0 0;
+  font-style: italic;
+  font-size: 24px;
+
+  span {
+	color:yellow;
+  }
+
+}
+
+.post {
+  background: #FFF;
+  padding: 20px;
+  margin: 0 0 40px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+  .easing-transition;
+
+  &:hover {
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .featured-img {
+	margin: 0 0 15px;
+  }
+
+  .post-title {
+	margin: 0 0 6px;
+	padding: 0;
+  }
+
+  .entry-footer {
+	font-size: 14px;
+	margin-top: 25px;
+
+	ul {
+	  margin: 0;
+	}
+  }
+
+  .meta-wrap {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+	padding: 0 0 10px;
+	margin-bottom: 15px;
+
+	.entry-meta {
+	  color: @gray;
+	  font-size: 16px;
+	  margin-bottom: 0;
+
+	  a {
+		border-bottom: 1px dotted @gray-light;
+		font-style: italic;
+		color: @gray;
+	  }
+
+	}
+
+  }
+
+  .entry-footer li.first-li {
+	padding-left: 0;
+  }
+
+}
+
+//Single Header
+#single-top-hat {
+  padding: 15px 0;
+  background: @th-primary-bg;
+
+  .brainstorm-single {
+	float: left;
+	width: 200px;
+	line-height: 1;
+
+	span {
+	  display: none;
+	}
+
+  }
+
+  .sub-heading {
+	float: right;
+	margin: 0;
+	padding: 0;
+	font-style: italic;
+	color: @gray-light;
+	font-size: 16px;
+
+	a {
+	  color: @gray-light;
+	  &:hover {
+		text-decoration: none;
+		color: #FFF;
+	  }
+	}
+
+  }
+
+}
+
+.single-post #blog-header-wrap.single-header {
+  border-top: none;
+  min-height: none;
+  padding: 60px 0 150px;
+  margin: 0;
+}
+
+.single-post .wrap {
+  margin-top: -100px;
+}
+
+//Typography
+
+.entry-content {
+
+  > p:first-of-type {
+	font-size: @font-size-base + 4;
+  }
+
+  li {
+	font-size: 16px;
+	margin-bottom: 10px;
+  }
+
+  blockquote {
+	font-style: italic;
+	.minion;
+	font-size: 1.2em;
+  }
+
+  .alignleft {
+	margin: 0 20px 20px 0;
+  }
+  .alignright {
+	margin: 0 0 20px 20px;
+  }
+
+  .alignnone {
+	margin: 20px auto;
+  }
+
+  .alignleft, .alignright, .alignnone {
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+	border-radius: 3px;
+
+	.easing-transition;
+
+	&:hover {
+	  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+	}
+
+  }
+
+}
+
+/* Author Bio */
+.author-info {
+  background: @gray-lighter;
+  border: 5px solid #F5F5F5;
+  padding: 20px;
+  margin: 30px 0;
+
+  .author-description {
+	h3 {
+	  margin: 0 0 10px;
+	  padding: 0;
+
+	  a {
+		color: @gray;
+	  }
+	}
+  }
+
+  /* Socials */
+  .author-contact {
+	margin: 0;
+	padding: 0;
+
+	li {
+	  list-style-type: none;
+	  margin: 0 5px 0 0;
+
+	  a:hover {
+		text-decoration: none;
+	  }
+
+	  .icon {
+
+		border-radius: 50%;
+		padding: 7px;
+		font-size: @font-size-base - 2;
+		background: @gray;
+		width: 32px;
+		height: 32px;
+		line-height: 1;
+		text-align: center;
+		color: #FFF;
+		.easing-transition;
+
+		&:hover {
+		  opacity: 0.8;
+		  text-decoration: none;
+		}
+
+		&.icon-twitter {
+		  background: @color-twitter;
+		}
+		&.icon-google-plus {
+		  background: @color-google-plus;
+		}
+		&.icon-facebook {
+		  background: @color-facebook;
+		}
+	  }
+	}
+  }
+  .author-avatar {
+
+	padding-right: 0;
+	img {
+	  .circle-border();
+	}
+
+  }
+
+  .auto-follow {
+	margin: 0;
+	text-align: right;
+	line-height: 18px;
+	.minion;
+	font-style: italic;
+  }
+
+}
+
+//Social Sharing
+
+div.essb_counter_modern_bottom.essb_displayed_sidebar.essb_template_metro-retina {
+
+  li {
+	border: none;
+	box-shadow: none;
+	margin: 0;
+
+	a {
+	  border-radius: 0;
+	  border: none;
+	  box-shadow: none;
+	  margin: 0;
+	  padding: 12px;
+	}
+  }
+}
+
+/*
+ * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files
+ *
+ * [1] IE9
+ * [2] IE10+
+ */
+/* 1 */
+.ie9 img[src*=".svg"] {
+  width: 100%;
+}
+
+/* 2 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img[src*=".svg"] {
+	width: 100%;
+  }
+}
+
+//Responsive
+@media (min-width: @screen-lg) {
+
+  #blog-header-wrap {
+
+  }
+
+  .post-title {
+	font-size: 46px;
+  }
+
+}
+
+@media (max-width: (@screen-lg - 1)) {
+
+  #blog-header-wrap {
+	padding: 75px 0;
+  }
+
+}
+
+@media (max-width: (@screen-md - 1)) {
+  #blog-header-wrap {
+	padding: 60px 0;
+  }
+
+  .post {
+	padding: 15px;
+
+	.featured-img {
+	  img {
+		height: auto;
+		max-width: 100%;
+	  }
+	}
+
+	.post-title {
+	  font-size: 30px;
+	}
+
+  }
+
+  .single #blog-header-wrap h1 {
+	font-size: 46px;
+	line-height: 1.3;
+  }
+
+}
+
+@media (max-width: (@screen-sm - 1)) {
+  #blog-header-wrap {
+	padding: 50px 0;
+
+	p.sub-heading {
+	  margin: 15px 0 10px;
+	}
+  }
+
+  .entry-footer ul {
+	margin-top: 0;
+
+  }
+
+}
+
+@media (max-width: (@screen-xs - 1)) {
+
+  .entry-footer ul li {
+	display: block;
+	padding: 0;
+	margin-top: 8px;
+
+  }
+
+  #blog-header-wrap.single-header {
+	padding: 40px 0 130px;
+  }
+
+  .single #blog-header-wrap h1 {
+	font-size: 36px;
+	line-height: 1.3;
+  }
+
+  #single-top-hat {
+	text-align: center;
+	.sub-heading {
+	  margin: 5px 0 0;
+	}
+
+	.brainstorm-single, .sub-heading {
+	  float: none;
+	}
+
+  }
+
+  //Typography
+  .entry-content {
+
+	.alignleft, .alignright, .alignnone {
+	  float: none;
+	  margin: 20px auto;
+	  display: block;
+	}
+
+  }
+
+  .author-info {
+	text-align: center;
+
+	.author-avatar {
+	  padding: 0 0 10px;
+	}
+
+  }
+
+}

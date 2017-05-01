@@ -1,0 +1,566 @@
+/**
+ * Franchise Update Longform
+ */
+
+body.page-template-template-fran-update-php {
+  height: 100%;
+  width: 100%;
+  background: #333;
+}
+
+body.page-template-template-fran-update-php ol li, body.page-template-template-fran-update-php ul li {
+  font-size: 20px;
+  margin: 0 0 12px;
+  font-style: italic;
+  text-align: left;
+}
+
+body.page-template-template-fran-update-php .centered-block li {
+
+}
+
+body.page-template-template-fran-update-php .section {
+  background-size: cover !important;
+}
+
+.sub-heading {
+  font-size: 22px;
+}
+
+.centered-block, .content-block {
+  background: #FFF;
+  padding: 20px;
+  opacity: 0.9;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.centered-block {
+  text-align: center;
+}
+
+label {
+  font-size: 22px;
+  font-family: "myriad-pro-condensed", sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+#footer-cta .gform_button {
+  border-color: #FFF;
+  color: #FFF;
+  &:hover {
+	color: yellow;
+  }
+
+}
+
+.closing-th {
+  .minion;
+  font-size: 22px;
+  font-style: italic;
+}
+
+/* ==========================================================================
+FullPage
+   ========================================================================== */
+
+#fullpage {
+  p.sub-heading {
+
+	font-style: italic;
+	font-size: 30px;
+	text-transform: none;
+	line-height: 36px;
+
+  }
+
+  .double-border-wrap {
+	border: 7px double #777;
+	padding: 15px 20px;
+
+	h1 {
+	  margin: 0 0 5px;
+	}
+
+  }
+
+  .next-slide {
+	background: url(../img/slide-arrow-down-black.png) no-repeat 0 0 transparent;
+	display: block;
+	margin: 18px auto 0;
+	float: none;
+	width: 60px;
+	height: 30px;
+  }
+
+  .next-slide-small {
+	font-weight: bold;
+	background: #FF0;
+	padding: 0 5px;
+	font-style: italic;
+
+	&:hover {
+	  color: #000;
+	}
+  }
+
+  .caption-wrap {
+	position: absolute;
+	bottom: 0;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	background: #333;
+	left: 0;
+	color: #FFF;
+	font-style: italic;
+	text-align: center;
+
+	a {
+	  color: yellow;
+	}
+
+	> p {
+	  font-style: italic;
+	  .minion;
+	  margin: 20px 50px;
+	  padding: 0;
+	}
+
+  }
+
+  .slide {
+	background-size: cover !important;
+	position: relative;
+  }
+
+  .home-footer {
+	margin-bottom: 80px;
+  }
+
+}
+
+#example-section-1, #example-section-2 {
+  .fp-controlArrow.fp-prev {
+	left: 15px;
+	width: 0;
+	border-width: 10.5px 10px 10.5px 0;
+	border-color: transparent white transparent transparent;
+	bottom: 22px;
+	top: auto;
+  }
+
+  .fp-controlArrow.fp-next {
+	right: 15px;
+	width: 0;
+	border-width: 10.5px 0 10.5px 10px;
+	border-color: transparent transparent transparent yellow;
+	bottom: 22px;
+	top: auto;
+  }
+}
+
+/* ==========================================================================
+FranUpdate Header
+   ========================================================================== */
+
+.frandev-cta {
+  color: #FFF;
+  margin: 11px 0 0;
+  border: 2px solid #FFF;
+  padding: 3px 10px;
+  text-align: center;
+
+  span {
+	margin: 0;
+	font-size: 13px;
+	display: block;
+  }
+
+  span.contact {
+	text-transform: uppercase;
+  }
+  span.question {
+	font-weight: bold;
+	font-size: 14px;
+	color: yellow;
+  }
+
+  &:hover {
+	text-decoration: none;
+	color: yellow;
+	border-color: yellow;
+  }
+
+}
+
+/* ==========================================================================
+CTA
+   ========================================================================== */
+
+#cta-modal {
+
+  display: none;
+  max-width: 600px;
+
+  textarea {
+	height: 100px;
+  }
+
+  .profile-img {
+	padding: 5px;
+	background: #FFF;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	border-radius: 50%;
+  }
+
+  .contact-info {
+
+	.contact-message {
+	  margin-left: 175px;
+
+	  h3 {
+		margin: 0 0 5px;
+	  }
+
+	  .sub-heading, .contact-employee {
+		margin: 0 0 8px;
+	  }
+
+	}
+
+  }
+
+  #gform_submit_button_2:hover {
+	color: #428bca;
+	border-color: #428bca;
+  }
+
+  .linked-in {
+	background: url('../img/frandev/linkedin-btn.gif');
+	width: 160px;
+	height: 25px;
+	display: block;
+
+  }
+
+  .pre-form-message {
+	clear: both;
+	margin: 20px 0 0;
+  }
+
+}
+
+/* ensure it displays in a modal */
+.mfp-content #cta-modal {
+  display: block;
+}
+
+.slide-callout {
+  position: absolute;
+  top: 120px;
+  left: 0;
+  background: #333;
+  padding: 6px 15px;
+  z-index: 99;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
+  .minion;
+
+  > p {
+	color: yellow;
+	margin: 0;
+	padding: 0;
+	font-style: italic;
+	font-size: 22px;
+  }
+}
+
+/* ==========================================================================
+Introduction
+   ========================================================================== */
+#franupdate-introduction {
+  background: url('../img/franupdate/intro-lock-safe.jpg') no-repeat center center;
+  text-align: center;
+
+  p.sub-heading {
+	font-size: 42px;
+	line-height: 1.3;
+  }
+
+}
+
+/* ==========================================================================
+Web
+   ========================================================================== */
+#web {
+  background: url('../img/franupdate/fran500-iphone.jpg') no-repeat center center;
+}
+
+/* ==========================================================================
+Example 1
+   ========================================================================== */
+#example-section-1 {
+
+  #slide1 {
+	background: url('../img/franupdate/example-rah.jpg') no-repeat center center;
+  }
+  #slide2 {
+	background: url('../img/franupdate/example-franchising-com.jpg') no-repeat center center;
+  }
+  #slide3 {
+	background: url('../img/franupdate/example-arco.jpg') no-repeat center center;
+  }
+
+}
+
+/* ==========================================================================
+History
+   ========================================================================== */
+#history {
+  background: url('../img/franupdate/chess-move.jpg') no-repeat center center;
+}
+
+/* ==========================================================================
+industry
+   ========================================================================== */
+#industry {
+  background: url('../img/franupdate/internet-connected.jpg') no-repeat center center;
+
+}
+
+/* ==========================================================================
+Example 2
+   ========================================================================== */
+#example-section-2 {
+
+  #slide1 {
+	background: url('../img/franupdate/franupdate-slide-1.jpg') no-repeat center center;
+  }
+  #slide2 {
+	background: url('../img/franupdate/franupdate-slide-2.jpg') no-repeat center center;
+  }
+  #slide3 {
+	background: url('../img/franupdate/blurred-background-office.jpg') no-repeat center center;
+
+	ol {
+	  list-style-type: none;
+	  padding: 0;
+	  li {
+		text-align: center;
+		padding: 0;
+	  }
+	}
+
+  }
+
+}
+
+/* ==========================================================================
+Understanding
+   ========================================================================== */
+#understanding {
+  background: url('../img/franupdate/understand-internet-business.jpg') no-repeat center center;
+}
+
+/* ==========================================================================
+intelligence-intro
+   ========================================================================== */
+#intelligence-intro {
+  background: url('../img/franupdate/unique-role.jpg') no-repeat center center;
+}
+
+/* ==========================================================================
+example-section-3
+   ========================================================================== */
+#example-section-3 {
+  background: url('../img/franupdate/blurry-office-hallway.jpg') no-repeat center center;
+
+  .fp-controlArrow.fp-prev {
+	left: 100px;
+	width: 0;
+	border-width: 20.5px 20px 20.5px 0;
+	border-color: transparent white transparent transparent;
+	bottom: auto;
+  }
+
+  .fp-controlArrow.fp-next {
+	right: 100px;
+	width: 0;
+	border-width: 20.5px 0 20.5px 20px;
+	border-color: transparent transparent transparent yellow;
+	bottom: auto;
+  }
+
+}
+
+/* ==========================================================================
+Outtro
+   ========================================================================== */
+#outtro {
+  background: url('../img/franupdate/city-scape-blue.jpg') no-repeat center center;
+}
+
+/* ==========================================================================
+Responsive Styles
+   ========================================================================== */
+
+@media (max-width: @screen-sm) and ( min-width: @screen-phone) {
+
+  #input_2_6 {
+	height: 100px;
+  }
+
+  #franupdate-introduction .centered-block {
+	max-width: 600px;
+
+	h1 {
+	  font-size: 40px;
+	}
+
+  }
+
+  .content-block {
+	margin-right: 30px;
+	margin-left: 30px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+  }
+
+  #lets-talk .super-large-text {
+	margin-top: 30px;
+  }
+
+}
+
+@media ( max-width: 767px ) {
+
+  body.page-template-template-fran-update-php {
+
+	h1 {
+	  font-size: 36px;
+	}
+
+	#franupdate-introduction p.sub-heading, #fullpage p.sub-heading {
+	  font-size: 20px;
+	  line-height: 1.2em;
+	}
+
+	#fullpage {
+	  ol li, ul li, p {
+		font-size: 18px;
+	  }
+	}
+
+	header.navbar {
+	  height: 50px;
+
+	  .navbar-header .navbar-brand {
+		float: none;
+		margin: 7px auto 0;
+	  }
+	  .cta-link {
+		display: none;
+	  }
+
+	}
+
+	#example-section-1 {
+	  display: none
+	}
+
+	.next-slide, .next-slide-small {
+	  display: none !important;
+	}
+
+	.centered-block, .content-block {
+	  padding: 10px;
+	}
+
+	.slide-callout {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  text-align: center;
+	}
+
+	#lets-talk {
+	  padding: 30px;
+	  .sub-phone {
+		text-align: center;
+		margin: 40px 0 0;
+		bottom: 0;
+		> span {
+		  display: block;
+		}
+	  }
+
+	  .home-footer {
+		margin-top: 40px;
+	  }
+
+	}
+
+	#franupdate-introduction {
+
+	  .centered-block {
+		margin-top: 75px;
+	  }
+	  .sub-heading {
+		line-height: 1.2;
+		margin: 15px 0;
+	  }
+
+	}
+
+	.centered-block, .content-block {
+	  margin-left: 20px;
+	  margin-right: 20px;
+	  margin-top: 50px;
+	  margin-bottom: 50px;
+	}
+
+	#slide2 {
+	  background: url('../img/frandev/wood_pattern.png') repeat 0 0 #FFF;
+	  background-size: auto !important;
+	}
+
+	.mobile-cta-link {
+	  position: fixed;
+	  bottom: 0;
+	  right: 0;
+	  background: #333;
+	  padding: 10px;
+	  z-index: 99;
+
+	  a.cta-link {
+		margin: 0;
+	  }
+
+	}
+	#cta-modal {
+	  .profile-image {
+		float: none !important;
+		text-align: center;
+		margin-bottom: 10px;
+	  }
+	  .contact-message, .linked-in {
+		margin-left: 0;
+		text-align: center;
+		margin:0 auto;
+	  }
+	}
+
+  }
+
+}
+
+@media (min-width: @screen-lg-desktop) {
+  body.page-template-template-fran-update-php {
+	#lets-talk .container {
+	  padding-top: 50px;
+	}
+  }
+}
