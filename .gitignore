@@ -26,8 +26,6 @@ wp-content/*
 # specify (see the commented-out examples for hints on how to do this.)
 wp-content/plugins/*
 # !wp-content/plugins/my-single-file-plugin.php
-!wp-content/plugins/give-website/
-!wp-content/plugins/give_csp_theme/
 !wp-content/plugins/acf-local-json/
 
 # Ignore everything in the "themes" directory, except the themes you
