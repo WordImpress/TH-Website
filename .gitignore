@@ -14,7 +14,8 @@
 /*
 !.gitignore
 !wp-content/
-!downloads/
+!pauldavis/
+!landing-pages/
 
 # Ignore everything in the "wp-content" directory, except the "plugins"
 # and "themes" directories.

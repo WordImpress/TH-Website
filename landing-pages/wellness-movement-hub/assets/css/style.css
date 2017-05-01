@@ -1,0 +1,649 @@
+/**
+Right at home landing page style sheet
+*/
+
+/*Body Styles*/
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.blue-text {
+	color: #1858a9;
+}
+
+.ocu-glo-text {
+	width: 20%;
+	position: relative;
+	top: -1px;
+}
+
+.ocu-glo-replace {
+	background: url('../img/ocu-glo-replacer.png') no-repeat bottom center transparent;
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	background-size: 100% auto;
+	text-indent: -100%;
+	overflow: hidden;
+	display: inline-block;
+	min-width: 70px;
+	line-height: 1em;
+}
+
+.bg-warning {
+	margin: 15px 0;
+	padding: 15px;
+	background-color: #fcf8e3;
+}
+
+body {
+	background: url('../img/bkg-body.jpg') repeat;
+}
+
+h1, h2, h3, h4, h5, h5, p {
+	margin: 0 0 15px;
+	padding: 0;
+}
+
+.list-inline {
+	padding-left: 0;
+	margin-left: -5px;
+	list-style: none;
+}
+
+.list-inline > li {
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.transition {
+	-webkit-transition: 0.2s all linear;
+	-moz-transition: 0.2s all linear;
+	-o-transition: 0.2s all linear;
+	transition: 0.2s all linear;
+}
+
+.fade-link:hover img {
+	opacity: 0.8;
+}
+
+/*Header Row*/
+.header {
+	background: #ffffff;
+	background: #01377b; /* Old browsers */
+	background: -moz-linear-gradient(top, #01377b 0%, #1857a9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #01377b), color-stop(100%, #1857a9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #01377b 0%, #1857a9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #01377b 0%, #1857a9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #01377b 0%, #1857a9 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #01377b 0%, #1857a9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#01377b', endColorstr='#1857a9', GradientType=0); /* IE6-9 */
+}
+
+.header .container {
+	background: url('../img/paw.png') no-repeat top right transparent;
+}
+
+.logo {
+	float: left;
+}
+
+.header-right-side a {
+	color: #FFFFFF;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.header-right-side a:hover, .footer-right-side a:hover {
+	text-decoration: none;
+	color: #ef8d00;
+}
+
+.header-right-side {
+	margin: 25px 0 0 0;
+	float: right;
+	text-align: right;
+}
+
+.header-right-side a:hover img {
+	opacity: 0.7;
+}
+
+/*Hero Div*/
+.hero-div {
+	background: url('../img/wellness-hub-header-dog-looking.jpg') no-repeat center center transparent;
+	background-size: cover;
+	/* The url is relative to the document, not to the css file! */
+	/* Prefer absolute urls to avoid confusion. */
+	-ms-behavior: url('backgroundsize.min.htc');
+	margin-bottom: 50px;
+	height: 450px;
+}
+
+.hero-box {
+	background: rgba(255, 255, 255, 0.6);
+	padding: 30px;
+	border: 3px solid #b5c6d6;
+	border-radius: 5px;
+	margin-top: 45px;
+}
+
+.hero-div h1 {
+	text-transform: uppercase;
+	font-size: 30px;
+	margin: 0 0 10px;
+	line-height: 1.2em;
+	text-shadow: 1px 1px 1px #FFF;
+}
+
+.hero-div h1 span {
+	color: red;
+}
+
+.hero-div p.sub-heading {
+	font-size: 22px;
+	margin: 0 0 15px;
+	line-height: 1.2em;
+}
+
+.hero-div ul {
+	padding: 0;
+	margin: 0 0 0 15px;
+	list-style: none;
+}
+
+.hero-div ul li {
+	background: url('../img/hero-check.png') no-repeat top left transparent;
+	padding: 0 0 0 30px;
+	margin: 0 0 7px;
+	font-size: 17px;
+	list-style-type: none;
+}
+
+/* Masonry Layout */
+
+.intro-section {
+	text-align: center;
+}
+
+.content-intro {
+	font-size: 40px;
+	margin: 0 0 10px;
+	line-height: 1.2;
+	font-weight: normal;
+}
+
+.intro-section .sub-heading {
+	font-size: 24px;
+}
+
+/* ---- masonry ---- */
+
+.masonry-container {
+	margin: 30px 0 60px;
+	overflow: hidden;
+	background: #EEE;
+}
+
+.masonry-container .item {
+	margin: 0.5%;
+	overflow: hidden;
+	float: left;
+	position: relative;
+}
+
+.masonry-container .item img {
+	width: 100%;
+}
+
+.masonry-container .item.w75 {
+	width: 74%;
+}
+
+.masonry-container .item.w65 {
+	width: 65.5%;
+}
+
+.masonry-container .item.w50 {
+	width: 49%;
+}
+
+.masonry-container .item.w25 {
+	width: 24%;
+}
+
+.masonry-container .item.w35 {
+	width: 32.5%;
+}
+
+/* Hover Caption  */
+.hover-wrap {
+	background: rgba(255, 255, 255, 0.76);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 10px;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+}
+
+.hover-wrap p {
+	font-size: 16px;
+}
+
+.hover-wrap p:last-of-type {
+	margin: 0;
+	padding: 0;
+}
+
+/* Product Slider Widget */
+
+.top-title {
+	margin-top: 0;
+}
+
+.top-title .ocu-glo-replace {
+	min-width: 65px;
+}
+
+.product-slider {
+	position: relative;
+	overflow: auto;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.product-slider > ul {
+	margin: 0;
+	padding: 0;
+}
+
+.product-slider li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.product-slider ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+/* Buttons */
+.green-button {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #69ca43), color-stop(1, #3c941a));
+	background: -moz-linear-gradient(center top, #69ca43 5%, #3c941a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#69ca43', endColorstr='#3c941a');
+	background-color: #69ca43;
+	border: 1px solid #bdbdbd;
+	display: inline-block;
+	color: #fff !important;
+	font-style: italic;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 2px 15px 5px 15px;
+	text-decoration: none;
+	margin: 0;
+	border-radius: 0px;
+}
+
+.green-button:hover {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #3c941a), color-stop(1, #69ca43));
+	background: -moz-linear-gradient(center top, #3c941a 5%, #69ca43 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3c941a', endColorstr='#69ca43');
+	background-color: #3c941a;
+	color: #f1ffeb !important;
+	cursor: pointer;
+	outline: none;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer;
+	outline: none;
+}
+
+/*white background for body */
+.white-bg {
+	background: white;
+	border-top: 1px solid #C7C7C7;
+	border-right: 1px solid #C7C7C7;
+	border-left: 1px solid #C7C7C7;
+	padding: 40px 0;
+	margin: 0 15px;
+}
+
+/* Forms */
+
+.email-list {
+	background: #f7f7f7;
+	padding: 35px;
+	border-radius: 10px;
+	border: 1px solid #E2E2E2;
+}
+
+.sign-up-headline {
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.sign-up-copy {
+	margin-top: 10px;
+	font-style: italic;
+	font-size: 16px;
+	display: block;
+}
+
+.ocu-glo-email {
+	position: relative;
+	top: -1px;
+	width: 10%;
+}
+
+.cta-form {
+	padding: 35px;
+	margin-top: 30px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.sign-up-form form {
+	background: #FFFFFF;
+}
+
+#f-name, #e-mail {
+	display: inline-block;
+	padding: 10px 5px 10px 15px;
+	margin-right: 20px;
+	border: 1px solid #AEAEAE;
+}
+
+.submit-btn {
+	background: #5cb85c;
+	border: 2px solid #449944;
+	color: #FFFFFF;
+	border-radius: 10px;
+	padding: 8px 30px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.submit-btn:hover {
+	background: #72e472;
+}
+
+.success-message {
+	padding: 0;
+	color: green;
+	font-weight: bold;
+	margin: 20px 0 0;
+	display: block;
+}
+
+.no-spam {
+	position: absolute;
+	left: 660px;
+	top: 130px;
+	z-index: 1;
+}
+
+.dog {
+	display: block;
+	margin: 0 auto;
+}
+
+.help-block {
+	color: red;
+	font-style: italic;
+	display: block;
+	padding: 10px 0 0;
+}
+
+/*footer Row*/
+.footer {
+	background: #ffffff;
+	background: #01377b; /* Old browsers */
+	background: -moz-linear-gradient(top, #01377b 0%, #1857a9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #01377b), color-stop(100%, #1857a9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #01377b 0%, #1857a9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #01377b 0%, #1857a9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #01377b 0%, #1857a9 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #01377b 0%, #1857a9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#01377b', endColorstr='#1857a9', GradientType=0); /* IE6-9 */
+}
+
+.footer .container {
+	background: url('../img/paw.png') no-repeat top right transparent;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.logo {
+	float: left;
+}
+
+.footer-right-side a {
+	color: #FFFFFF;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.footer-right-side {
+	margin: 25px 15px 0 0;
+	float: right;
+	text-align: right;
+}
+
+.footer-right-side p.num {
+	margin: 0;
+}
+
+.footer-right-side a:hover img {
+	opacity: 0.7;
+}
+
+/*----------------------------------
+RESPONSIVE
+-------------------------------------*/
+
+body {
+	overflow-x: hidden;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 100%;
+}
+
+@media (max-width: 1199px) {
+
+	/*hero div*/
+	.hero-div {
+		padding: 30px 0;
+	}
+
+	/*email*/
+	.sign-up-headline {
+		font-size: 22px;
+	}
+
+	.sign-up-copy {
+		font-size: 14px;
+	}
+
+	.no-spam {
+		left: 535px;
+		top: 110px;
+		width: 14%;
+	}
+
+	.cta-form {
+		padding: 25px;
+	}
+
+	#f-name, #e-mail {
+		padding: 8px 0 8px 4px;
+		margin-right: 5px;
+	}
+
+	.submit-btn {
+		border-radius: 6px;
+		padding: 6px 15px;
+		font-size: 14px;
+	}
+
+	.slider__nav {
+		bottom: 86px;
+	}
+
+	.dog {
+		margin: 30px auto 10px;
+	}
+
+	/* Hover Caption  */
+	.hover-wrap {
+		bottom: 0 !important;
+		opacity: 1;
+	}
+
+	.hover-wrap p {
+		font-size: 14px;
+	}
+
+}
+
+/* Responsive Media Queries */
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+	.hero-box {
+		margin: 10px 0 0;
+	}
+
+}
+
+@media (min-width: 667px) and (max-width: 1023px) {
+
+	.main-cta {
+		margin: 0;
+		float: right;
+	}
+
+	.main-cta .hero-box {
+		margin: 11px 0 0;
+		float: right;
+		width: 330px;
+		padding: 20px;
+	}
+
+	.main-cta .hero-box h1 {
+		font-size: 22px;
+	}
+
+	.main-cta .hero-box p.sub-heading {
+		font-size: 18px;
+	}
+
+	.main-cta .hero-box ul li {
+		font-size: 16px;
+	}
+
+}
+
+@media (min-width: 551px) and (max-width: 991px) {
+	/* Hover Caption  */
+	.hover-wrap p {
+		font-size: 12px;
+	}
+
+}
+
+/* iPhone 6 Horizontal and below */
+@media (max-width: 666px) {
+
+	.header {
+		text-align: center;
+	}
+
+	.header .container, .footer .container {
+		background-size: cover;
+		background-position: bottom center;
+
+		text-align: center;
+	}
+
+	.logo {
+		float: none;
+	}
+
+	.header-right-side, .footer-right-side {
+		float: none;
+		text-align: center;
+		margin: 0 0 20px;
+	}
+
+	.header-right-side a, .footer-right-side a {
+		font-size: 22px;
+	}
+
+	.hero-div {
+		background: url('../img/sky-bg-mobile.jpg') no-repeat 0 0 #b5d6eb;
+		height: auto;
+		background-size: cover;
+	}
+
+	.hero-box {
+		margin: 0;
+		padding: 20px;
+	}
+
+	.hero-box h1 {
+		font-size: 22px;
+
+		text-shadow: 0 1px 1px rgba(255, 255, 255, 0.49);
+	}
+
+	.hero-div p.sub-heading {
+		font-size: 16px;
+	}
+
+	.content-intro {
+		font-size: 33px;
+	}
+
+	.intro-section .sub-heading {
+		font-size: 22px;
+	}
+
+	.email-list {
+		padding: 20px;
+		margin: 0 0 40px;
+	}
+
+	.ocu-glo-email {
+		width: 70px;
+	}
+
+	p.num {
+		margin: 0;
+	}
+
+}
+
+@media (max-width: 550px) {
+
+	/* Masonry Breakdown */
+	.masonry-container .item {
+		width: 100% !important;
+		float: none;
+	}
+
+}

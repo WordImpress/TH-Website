@@ -1,0 +1,10 @@
+{
+"toFile" : [
+   {"from": "/assets/css(.+\\.css)",
+   "to": "/assets/css/$1"}
+  ],
+  "fromFile" : [
+     {"from": "(\\\\|/)assets\\css\\1(.+(\\.js|\\.css))(\\.[a-zA-Z]+)?$",
+      "to": "/assets/$2?body=1"}
+      ]
+}
