@@ -9,7 +9,6 @@
 
 		<div id="footer-cta">
 			<?php echo do_shortcode( '[gravityform id="1" name="Let\'s Talk" title="false" description="false" ajax="true"]' ); ?>
-			<p class="sub-phone">...or call us at <span>1(619)550-5601</span></p>
 
 		</div>
 
